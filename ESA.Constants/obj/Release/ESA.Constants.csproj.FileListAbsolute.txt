@@ -1,0 +1,5 @@
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Constants\bin\Release\ESA.Constants.dll
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Constants\bin\Release\ESA.Constants.pdb
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Constants\obj\Release\ESA.Constants.csproj.CoreCompileInputs.cache
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Constants\obj\Release\ESA.Constants.dll
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Constants\obj\Release\ESA.Constants.pdb

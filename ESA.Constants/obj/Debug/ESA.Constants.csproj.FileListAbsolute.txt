@@ -1,0 +1,12 @@
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Constants\bin\Debug\ESA.Constants.dll
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Constants\bin\Debug\ESA.Constants.pdb
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Constants\obj\Debug\ESA.Constants.csprojResolveAssemblyReference.cache
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Constants\obj\Debug\ESA.Constants.csproj.CoreCompileInputs.cache
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Constants\obj\Debug\ESA.Constants.dll
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Constants\obj\Debug\ESA.Constants.pdb
+C:\Users\kirze\Desktop\Education\AngularWithCookies\ESA.Constants\bin\Debug\ESA.Constants.dll
+C:\Users\kirze\Desktop\Education\AngularWithCookies\ESA.Constants\bin\Debug\ESA.Constants.pdb
+C:\Users\kirze\Desktop\Education\AngularWithCookies\ESA.Constants\obj\Debug\ESA.Constants.csprojResolveAssemblyReference.cache
+C:\Users\kirze\Desktop\Education\AngularWithCookies\ESA.Constants\obj\Debug\ESA.Constants.csproj.CoreCompileInputs.cache
+C:\Users\kirze\Desktop\Education\AngularWithCookies\ESA.Constants\obj\Debug\ESA.Constants.dll
+C:\Users\kirze\Desktop\Education\AngularWithCookies\ESA.Constants\obj\Debug\ESA.Constants.pdb

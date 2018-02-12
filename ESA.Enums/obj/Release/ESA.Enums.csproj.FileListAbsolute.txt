@@ -1,0 +1,10 @@
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Enums\bin\Release\CommonEnumResources.kk.resx
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Enums\bin\Release\ESA.Enums.dll
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Enums\bin\Release\ESA.Enums.pdb
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Enums\bin\Release\ESA.Resources.dll
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Enums\bin\Release\ESA.Resources.pdb
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Enums\bin\Release\kk\ESA.Resources.resources.dll
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Enums\obj\Release\ESA.Enums.csprojResolveAssemblyReference.cache
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Enums\obj\Release\ESA.Enums.csproj.CoreCompileInputs.cache
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Enums\obj\Release\ESA.Enums.dll
+C:\Users\kirze\Desktop\Develop\ESA\ESA.Enums\obj\Release\ESA.Enums.pdb

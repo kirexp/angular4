@@ -1,0 +1,10 @@
+@{
+    ViewData["Title"] = "Home asdasdasd";
+}
+<h1>that employee shmindex</h1>
+<app asp-prerender-module="ClientApp/dist/main-server-employee">Loading...</app>
+
+<script src="~/dist/vendor.js" asp-append-version="true"></script>
+@section scripts {
+    <script src="~/dist/main-client-employee.js" asp-append-version="true"></script>
+}

@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{163A5F69-0503-493C-A1BB-BC1B5CA4559D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ESA.DAL.Almaty</RootNamespace>
+    <AssemblyName>ESA.DAL.Almaty</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Protected_Release|AnyCPU'">
+    <OutputPath>bin\Protected_Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Protected_Release|x86'">
+    <OutputPath>bin\x86\Protected_Release\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=4.1.0.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.1.0\lib\net40\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.2.0.3.0\lib\net40\FluentNHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Inflector, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Inflector.1.0.0.0\lib\net45\Inflector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conventions\CustomForeignKeyConvention.cs" />
+    <Compile Include="Conventions\EnumConvention.cs" />
+    <Compile Include="Conventions\PluralizeTableNames.cs" />
+    <Compile Include="Conventions\StringColumnLengthConvention.cs" />
+    <Compile Include="DbInitializer.cs" />
+    <Compile Include="Entities\Account\ChildProfile.cs" />
+    <Compile Include="Entities\Account\PersonalDocument.cs" />
+    <Compile Include="Entities\Account\Role.cs" />
+    <Compile Include="Entities\DayCareService\DayCareQueueState.cs" />
+    <Compile Include="Entities\DayCareService\DirectionState.cs" />
+    <Compile Include="Entities\Dictionaries\DayCareOwner.cs" />
+    <Compile Include="Entities\Requests\RequestHistory.cs" />
+    <Compile Include="Entities\Shared\ExternalResponseStorage.cs" />
+    <Compile Include="Entities\Requests\RequestDocument.cs" />
+    <Compile Include="Entities\Account\Profile.cs" />
+    <Compile Include="Entities\Dictionaries\QuestionCategory.cs" />
+    <Compile Include="Entities\DayCareService\DayCareDirection.cs" />
+    <Compile Include="Entities\Account\ExternalToken.cs" />
+    <Compile Include="Entities\Account\Permission.cs" />
+    <Compile Include="EntityExtensions.cs" />
+    <Compile Include="IDocument.cs" />
+    <Compile Include="IProfile.cs" />
+    <Compile Include="IRequest.cs" />
+    <Compile Include="Entities\ServiceSettings\ServiceEmployee.cs" />
+    <Compile Include="Entities\Account\User.cs" />
+    <Compile Include="Entities\DayCareService\DayCareQueueRequest.cs" />
+    <Compile Include="Entities\File.cs" />
+    <Compile Include="Entities\PrivilagedPerson.cs" />
+    <Compile Include="Entities\Requests\Request.cs" />
+    <Compile Include="Entities\DayCareService\DayCareFreePlace.cs" />
+    <Compile Include="Entities\Dictionaries\DayCare.cs" />
+    <Compile Include="Entities\Requests\RequestAttachment.cs" />
+    <Compile Include="Entities\Dictionaries\RequestAttachmentType.cs" />
+    <Compile Include="Entities\Requests\RequestState.cs" />
+    <Compile Include="Entities\ServiceSettings\ServiceAttachment.cs" />
+    <Compile Include="Entities\ServiceSettings\ServiceStep.cs" />
+    <Compile Include="IEntity.cs" />
+    <Compile Include="IPeriodic.cs" />
+    <Compile Include="IReference.cs" />
+    <Compile Include="Override\Account\ExternalTokenOverride.cs" />
+    <Compile Include="Override\Account\RoleOverride.cs" />
+    <Compile Include="Override\DayCareService\DayCareQueueStateOverride.cs" />
+    <Compile Include="Override\DayCareService\DirectionStateOverride.cs" />
+    <Compile Include="Override\DayCareService\DayCareDirectionOverride.cs" />
+    <Compile Include="Override\Dictionaries\QuestionCategoryOverride.cs" />
+    <Compile Include="Override\Requests\RequestDocumentOverride.cs" />
+    <Compile Include="Override\PrivilageOverride.cs" />
+    <Compile Include="Override\FileOverride.cs" />
+    <Compile Include="Override\Account\PermissionOverride.cs" />
+    <Compile Include="Override\Account\ProfileOverride.cs" />
+    <Compile Include="Override\Dictionaries\RequestAttachmentTypeOverride.cs" />
+    <Compile Include="Override\Requests\RequestAttachmentOverride.cs" />
+    <Compile Include="Override\ServiceSettings\ServiceEmployeeOverride.cs" />
+    <Compile Include="Override\ServiceSettings\ServiceAttachmentOverride.cs" />
+    <Compile Include="Override\ServiceSettings\ServiceStateOverride.cs" />
+    <Compile Include="Override\Requests\RequestStateOverride.cs" />
+    <Compile Include="Override\Requests\RequestOverride.cs" />
+    <Compile Include="Override\DayCareService\DayCareQueueRequestOverride.cs" />
+    <Compile Include="Override\DayCareService\DayCareFreePlaceOverride.cs" />
+    <Compile Include="Override\Dictionaries\DayCareOverride.cs" />
+    <Compile Include="Override\Account\UserOverride.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider.cs" />
+    <Compile Include="Repositories\PermissionRepository.cs" />
+    <Compile Include="Repositories\RequestRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Entities\RequestLog.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ESA.Common\ESA.Common.csproj">
+      <Project>{B966B52E-810F-4C7E-9429-B9368B015601}</Project>
+      <Name>ESA.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ESA.Constants\ESA.Constants.csproj">
+      <Project>{d3c26623-ae53-4ce3-9273-8bd5c9a01961}</Project>
+      <Name>ESA.Constants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ESA.Enums\ESA.Enums.csproj">
+      <Project>{B3F71BE2-7F57-4099-850A-1277BB9AB505}</Project>
+      <Name>ESA.Enums</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="StoredProcedure\OpenStatistics.sql" />
+    <Content Include="StoredProcedure\UpdateActualQueueNumber.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
